@@ -1,0 +1,1662 @@
+1 : システムがローカルネットワーク上で見た IP デバイスの IPv4 アドレスと MAC アドレスをリストするために使用できるコマンドは次のうちどれですか？ 
+A. arp  
+B. ifconfig  
+C. ipadm  
+D. iwlist  
+
+解答：A  
+
+2 : 長期間にわたって sar を使用してパフォーマンスデータを収集するには、どのコマンドを cron から定期的に実行する必要がありますか？ 
+A. sa1  
+B. sarmon  
+C. sarec  
+D. sadf  
+E. sarcron  
+
+解答：A 
+
+3 : Linux システムで論理ボリュームを作成してマウントする正しいコマンドシーケンスは次のとおりです。 
+A. lvcreate, pvcreate, vgcreate, mkfs, mount  
+B. pvcreate, vgcreate, lvcreate, mkfs, mount  
+C. vgcreate, lvcreate, pvcreate, mount, mkfs  
+D. mkfs, pvcreate, vgcreate, lvcreate, mount  
+E. pvcreate, lvcreate, vgcreate, mkfs, mount  
+
+解答：B  
+
+4 : 次の top からの出力では、どのプロセスが CPU が wa の状態で過ごす時間のパーセンテージに貢献していますか？ 
+Tasks: 193 total, 1 running, 190 sleeping, 2 stopped, 0 zombie  
+Cpu(s): 0.5%us, 0.3%sy, 0.0%ni, 98.2%id, 1.0%wa, 0.0%hi, 0.0%si, 0.0%st  
+A. ユーザーの操作を待っているプロセス。 
+B. 既に閉じていて、再度起動するのを待っているプロセス。 
+C. RAM に完全にロードされていないか、スワップされていないためにまだスケジュールされていないプ ロセス。 
+D. IO 操作が完了するのを待つプロセス。 
+
+解答：D  
+
+5 : 各書き込み操作後に自動的に巻き戻されずに使用される場合、システム上の最初の SCSI テープドライブのデバイス名は何ですか？ デバイスのフルパスを指定してください。
+
+解答：/dev/nst0 
+
+6 : どのコマンドが ISO9660 ファイルシステムの作成に使用されますか？ 
+
+解答：mkisofs、genisoimage  
+
+7 : 次の出力では、負荷平均は何時間枠のシステム負荷平均を表しますか？ 
+12:10:05 up 18 days, 19:00, 2 users, load average: 0.47, 24.71, 35.31  
+A. 1 分、5 分、15 分 
+B. 1 分、15 分、30 分 
+C. 1 秒、15 秒、30 秒 
+D. 15 分、30 分、60 分 
+E. 15 秒、30 秒、60 秒 
+
+解答：A  
+
+8  : /dev/sda1 上の ext4 ファイルシステムにラベルルートを追加するにはどうすればよいですか？ 
+A. relabel /dev/sda1 root  
+B. tune2fs -L root /dev/sda1  
+C. echo 'root' > /proc/fs/sda1/label  
+D. labelfs --device /dev/sda1 root  
+
+解答：B  
+
+9 : 次のどのツールを使用してメモリ使用量を測定しますか？ 3 つ選択
+A. mpstat  
+B. pstree 
+C. sar  
+D. top  
+E. vmstat
+
+解答：C、D、E  
+
+10 : ブート時に Linux カーネルがルートファイルシステムをマウントできない場合はどうなりますか？ 
+A. エラーメッセージが表示され、ブートプロセスを続行するために有効なルートファイルシステムを指定するように管理者にカーネルから求められます。 
+B. エラーメッセージが表示され、キーを押すとシステムが再起動します。 
+C. エラーメッセージが表示され、システムはメンテナンスモードで起動します。 
+D. どのデバイスがマウントできなかったか、または init が見つからないことを知らせるエラーメッセージが表示されます。 
+E. 対応するカーネルモジュールをロードできなかったことを示すエラーメッセージが表示されます。 
+
+解答：D  
+
+11 : リモートユーザアカウント kevin を使用してリモートホスト deltaur 上の /var/tmp/ にディレクトリ./fyf/ を安全にコピーするコマンドはどれですか？ 
+A. rsync -a -e ssh kevin@deltaur:/var/tmp/ fyf/  
+B. rsync -a -u kevin -e ssh fyf/ deltaur:/var/tmp/  
+C. rsync -a -u kevin -e ssh deltaur:/var/tmp/ fyf/  
+D. rsync -a -e ssh fyf/ kevin@deltaur:/var/tmp/  
+
+解答：D  
+
+12 : 次のコマンドのどれが /dev/sdb3 パーティションの内容を消去しますか？ 
+A. rm /dev/sdb3  
+B. dd if=/dev/zero of=/dev/sdb3 
+C. dd of=/dev/zero if=/dev/sdb3  
+D. umount /dev/sdb3  
+
+解答：B  
+
+13 : 特定のクライアントがサービスに接続できないように、正しくフォーマットされたエントリが /etc/hosts.deny に追加されましたが、効果がありません。原因は何でしょうか？ ( 2 つ選択 ） 
+A. tcpd は HUP 信号を送信する必要があります。 
+B. サービスを再起動する必要があります。 
+C. マシンを再起動する必要があります。 
+D. /etc/hosts.allow に競合するエントリがあります。 
+E. このサービスは tcpwrapper をサポートしていません。 
+
+解答：D、E 
+
+14 : どの情報が /proc/mdstat ファイルから抜粋していますか？ ( 2 つ選択 )
+A. /dev/md0 内のディスクの 1 つに障害が発生し、スペアディスクを使用して完全な冗長性を再作成しています 
+B. スペアディスク/dev/sda1 は、現在のリカバリ後に完全な冗長性を復元するために使用されます 
+C. 情報[UU_]は、RAID が 1 つのディスクを欠いており、完全に冗長ではないことを意味します 
+D. デバイスはバージョン 1.2 メタデータを使用して、LILO と GRUB Legacy が /dev/md0 をブートパーティションとして使用できるようにしています。これは GRUB2 では必要ないです 
+E. 情報[3/2]は、3 つの RAID ディスクがアレイに属し、2 つのディスクがスペアであることを意味します。一緒に使用可能なディスクの数に等しいです 
+
+解答：A、C  
+
+15 : Filesystem Hierarchy Standard（FHS）によると、Linux カーネルソースへのパスとは何か、本当の Linux ソースコードへのシンボリックリンクかもしれませんか？ 
+
+解答：/usr/src/linux、/usr/src/linux/  
+
+16 : 3.4.50-11 Linux カーネルを実行しているサーバーでは、/boot ディレクトリのどのファイルにカーネル構成パラメータが入っていますか？ 
+A. config-linux-3.4.50-11  
+B. config-3.4.50-11  
+C. system-3.4.50-11  
+D. vmlinuz-3.4.50-11  
+E. rc.config-3.4.50-11  
+
+解答：B 
+ 
+17: 入力問題 
+どのコマンドが既存の ext2 ファイルシステムを非破壊的に ext3 ファイルシステムにしますか？ 
+
+解答：/sbin/tune2fs、tune2fs 
+ 
+18 : 何を監視するかを定義するために、collectd 構成ファイルのどのオプションが必要ですか？ 
+A. LoadModule  
+B. Module  
+C. Plugin  
+D. LoadPlugin  
+
+解答：D  
+ 
+19 : 入力問題 
+どのファイルが GRUB に Linux 形式と GRUB 構文の両方でファイルシステムパーティションのパスを伝えられますか？ 
+
+解答：device.map  
+
+20 : initramfs イメージの作成に使用するアーカイブ形式はどれですか？ 
+A. gzip  
+B. tar  
+C. RAR  
+D. cpio  
+E. bzip2
+ 
+解答：D  
+
+21 : メモリ使用量、ページング、およびブロック入出力に関する情報を報告するコマンドはどれですか？ 
+A. free  
+B. memshow  
+C. ps  
+D. top  
+E. vmstat  
+
+解答：E  
+ 
+22 : 以下は、tcpdump -nli eth1 の出力からの抜粋です。 
+1 3:03:17.277327 IP 192.168.123.5.1065 > 192.168.5.112.21: Flags [.], ack 1 (truncated)  1 3:03:17.598624 IP 192.168.5.112.21 > 192.168.123.5.1065: Flags [P.], seq (truncated)  
+どのネットワークサービスまたはプロトコルが使用されましたか？ 
+A. FTP  
+B. HTTP  
+C. SSH  
+D. DNS  
+E. DHCP  
+
+解答：A  
+ 
+23 : 入力問題 
+tcpdump を実行する-nli eth1 'tcp'は以下の出力を表示します： 
+14:41:53.694538 IP 10.1.52.145.51738 > 24.215.7.162.143: Flags [.], ack 33051, win 1002, options  [nop,nop,TS val 36789130 ecr 1746004159], length 0  
+このパケットの送信元 IP アドレスは何ですか？ 答えは数字とドットで指定してください。
+ 
+解答：10.1.52.145  
+ 
+24 : 次のコマンドのどれが、ワイヤレス・インタフェース wlan0 の機能と使用可能な周波数を示しています か？ 
+A. iw phy pyh0 info  
+B. iw dev wlan0 info  
+C. iw dev wlan0 show  
+D. iw phy wlan0 show  
+E. iw phy0 show  
+
+解答：A  
+ 
+25: tcpdump の次のフィルタキーワードのうち、ネットワークパケットの転送方向を指定するのはどれですか？ ( 2 つ選択 ) 
+A. source  
+B. src  
+C. dest  
+D. src or dst  
+E. both 
+ 
+解答：B、D  
+ 
+26 : 入力問題 
+現在ログインしているすべてのユーザーにメッセージを送信するために使用されるコマンドは何ですか？
+
+解答：wall  
+
+27 : 次のコマンドのどれが、ローカルシステムが直接接続された IP ネットワーク上で見たネットワークノード の IPv4 アドレスと MAC アドレスをリストしていますか？ 
+A. arp  
+B. ifconfig  
+C. ipadm  
+D. iwlist  
+
+解答：A  
+
+28 : 入力問題 
+どのファイルに、システムコンソールのログインプロンプトの上に表示されるメッセージが含まれていますか？ パスを含むファイルの完全な名前を指定
+
+解答：/etc/issue  
+ 
+29 : 一般ユーザーJoe は ./configure && make && make install を実行すると、プログラムをビルドしてインストールします。ただし、インストールは失敗します。プログラムをインストールするには何ができますか？ ( 2 つ選択 )
+A. suinstall を使用してバイナリを手動でインストールします。  
+B. root 権限で make install を実行します。 
+C. ./configure を実行して、正しいインストールのための設定を維持しません。 
+D. ユーザーに書き込み権限がある--prefix オプションを指定して./configure を再実行します。 
+E. make install_local を実行して/usr/local/にインストールします。
+
+解答：B、D  
+ 
+30 : これらのディレクトリのどれをバックアップしないですか？ 
+A. /backup  
+B. /etc  
+C. /opt  
+D. /proc  
+E. /var/log  
+
+解答：D  
+ 
+31 : 次のうち、静的 IPv6 アドレスをネットワークインターフェイス eth0 に追加するコマンドはどれですか？ 
+A. ip add addr 2001:db8::1337/64 dev eth0  
+B. ip -6 add addr 2001:db8::1337/64 dev eth0  
+C. ip addr add 2001:db8::1337/64 dev eth0  
+D. ip -6 addr add new 2001:db8::1337/64 dev eth0  
+E. ip addr add -6 2001:db8::1337/64 dev eth0 
+
+解答：D  
+ 
+32 : 入力問題
+以下の tcpdump の出力によれば、クライアントホストの IP アドレスはなんですか？ 
+02:12:40.511381 IP 192.168.246.11.1045 > 192.168.246.1.22: S  
+3838532429:3838532429(0) win 5840 <mss 1460,sackOK,timestamp  
+31325740,nop,wscale 2>  
+02:12:40.511540 IP 192.168.246.1.22 > 192.168.246.11.1045: S  
+1209330085:1209330085(0) ack 383853 2430 win 5792 <mss 1460,sackOK,timestamp  11553457 3132574,nop,wscale 0>  
+0 2:12:40.511755 IP 192.168.246.11.1045 > 192.168.246.1.22: . ack 1 win 1460  < nop,nop,timestamp 3 132574 11553457> 
+0 2:12:40.515122 IP 192.168.246.1.22 > 192.168.246.11.1045: P 1:26(25) ack 1 win 5792  < nop,nop,timestamp 11553460 3132574>  
+0 2:12:40.515511 IP 192.168.246.11.1045 > 192.168.246.1.22: . ack 26 win 1460  < nop,nop,timestamp 3132578 11553460>  
+0 2:12:40.515952 IP 192.168.246.11.1045 > 192.168.246.1.22: P 1:23(22) ack 26 win 1460  < nop,nop,timestamp 3132578 11553460>  
+解答：192.168.246.11  
+ 
+33 : 複数のアクティブなネットワークインターフェイスを持つ Linuxノードでは、それぞれデフォルトルートがインターネットに接続されていますが、どのデフォルトルートが優先されますか？ 
+A. メトリック値が最も高いデフォルトルート 
+B. 最高の MTU 値を持つデフォルトルート 
+C. 最低の TTL 値を持つデフォルトルート 
+D. 最高の TTL 値を持つデフォルトルート 
+E. 最も低いメトリック値を持つデフォルトルート 
+
+解答：E  
+ 
+34 : システムには、ハードディスクと CD ライタがそれぞれ 1 つずつあり、どちらも SATA コントローラに接続されています。どのデバイスが CD ライタを表していますか？ 
+A. /dev/hdb  
+B. /dev/sdd  
+C. /dev/scd1  
+D. /dev/sr0  
+E. /dev/sr1  
+
+解答：D 
+ 
+35 : クライアントマシンが IP アドレス 192.168.0.1 上で実行されている再帰ネームサーバを確実に使用するためには何が必要ですか？ 
+( 2 つ選択 ) 
+A. /etc/resolv.conf に nameserver 192.168.0.1 を追加します。 
+B. ルートを追加してネームサーバー192.168.0.1 を追加します。 
+C. ifconfig eth0 ネームサーバー192.168.0.1 を実行します。 
+D. dns サービスが/etc/nsswitch.conf ファイルの hosts エントリにリストされていることを確認します。 
+E. bind add nameserver 192.168.0.1 を実行します。 
+
+解答：A、D  
+ 
+36 : /etc/fstab の最後のフィールド（fsck の順序）の 0 は、ファイルシステムについて何を示していますか？ 
+A. より高い値を持つファイルシステムの前にファイルシステムをチェックする必要があります。 
+B. ファイルシステムは、より高い値を持つファイルシステムの後にチェックする必要があります。 
+C. ファイルシステムチェックカウンタは無視されます。 
+D. ファイルシステムはチェックされず、システムにマウントされていません。 
+E. ファイルシステムは、マウント時に fsck チェックを必要としません。 
+
+解答：E  
+ 
+37 :入力問題 
+SystemV init プロセスの主要な設定ファイルはどれですか？ パスを含むファイルの完全な名前を指定します。） 
+
+解答：/etc/inittab  
+ 
+38 : RAID ボリュームの設定に使用するコマンドは次のうちどれですか？
+A. makerd  
+B. mdadm  
+C. mkfs.raid  
+D. makeraid  
+E. rdconfig  
+
+解答：B  
+ 
+39 : 192.168.1.0/24 サブネット内にすでに 1 つの IP アドレスを持っているネットワークインターフェイス （eth0）に別（192.168.1.2）を追加するコマンドは何ですか？ 
+A. ip add addr 192.168.1.2/32 dev eth0  
+B. ifconfig eth0 192.168.1.2 ネットマスク 255.255.255.255  
+C. ip addr add 192.168.1.2/32 dev eth0  
+D. ipconfig eth0 192.168.1.2 
+
+解答：C  
+ 
+40 : 変更を有効にするために syslogd の設定ファイルを更新したらどうしたらいいですか？ (2 つ選択。） 
+A. 何もする必要はありませんが、syslogd は数分後に更新された設定ファイルに気付きます。 
+B. HUP シグナルを syslogd プロセスに送信します。 
+C. syslogd サービスを再起動します。 
+D. コマンド syslogd -u を実行します。 
+
+解答：B、C  
+ 
+41 : http://kernel.org からパッチ 4.6.4.xz をダウンロードした後、バージョン 4.6.4 Linux カーネルのビルドを 準備する次のステップは何ですか？ (2 つ選択。）
+A. ファイルを解凍し、結果のディレクトリを/ usr / src / linux に移動します 
+B. カーネルバージョン 4.6.0 を含むカーネルソースディレクトリにパッチファイルを適用する 
+C. カーネルバージョン 4.6.3 を含むカーネルソースディレクトリにパッチファイルを適用する 
+D. xz を使用してファイルを圧縮解除して、圧縮されていないパッチファイルを取得します 
+E. パッチを使用して、非圧縮パッチファイルを以前のカーネルバージョンのソースディレクトリに適用す る 
+
+解答：D、E  
+ 
+42 入力問題 
+メインの SysVinit プロセス設定ファイルへの完全なパスを入力してください。 
+
+解答：/etc/inittab  
+ 
+43 : 次のうち、UEFI ブートローダーが付属しているものはどれですか？ 
+A. systemd  
+B. SysVinit  
+C. Upstart  
+D. OpenRC  
+E. launchd  
+
+解答：A  
+ 
+44 : Linux サーバーは、定期的なメンテナンスのためにシングルユーザーモードで実行されています。サーバーを通常のランレベルに復元するために使用するコマンドはどれですか？ (2 つ選択。） 
+A. telinit 0  
+B. shutdown -r now  
+C. sync 
+D. shutdown -h now  
+E. reboot  
+
+解答：B、E  
+ 
+45 : さまざまな TCP または UDP サービスとの対話をスクリプト化するために使用できるコマンドはどれですか？ 
+A. ftp  
+B. nc  
+C. tcpdump  
+D. strings  
+E. wget  
+
+解答：B  
+ 
+46 : PXE が提供する機能は何ですか？ 
+A. ネットワークインターフェイスを使用してコンピュータを起動する機能。 
+B. コンピュータ上でリモート X11 デスクトップを起動する機能。 
+C. ブートプロセスの完了後にシステムの構成を検証する機能。 
+D. ブートプロセスを完了する前にシステムの構成を確認する機能。 
+
+解答：A  
+ 
+47 : システムが稼働している Linux サーバが、メンテナンスのために rescue.target にブートされました。サーバーを通常のターゲットに復元するために使用するコマンドはどれですか？ (2 つ選択。） 
+A. telinit 0  
+B. systemctl default 
+C. sync  
+D. systemctl emergency  
+E. systemctl reboot
+  
+解答：A、B  
+ 
+48 : Linux システムで最も CPU サイクルを使用しているソートされたプロセスの PID を提供するコマンドはどれですか？ 
+A. top  
+B. uptime  
+C. ps aux  
+D. vmstat  
+E. freemem  
+
+解答：A  
+ 
+49 : 次のうち、CD-ROM ファイルシステム標準はどれですか？ 
+A. OSI9660  
+B. ISO9660  
+C. SR0FS  
+D. ISO8859  
+E. ROM-EO
+  
+解答：B  
+ 
+50 : メインの Linux カーネルモジュールのソースコードはどのように配布されていますか？ 
+A. Linux カーネルのソースコードに含まれています。
+B. カーネルモジュールは、コンパイル時に使用されるため、必要に応じてダウンロードされます。 
+C. カーネルモジュールは、独自のリリースサイクルを持ち、Linux カーネルソースとは別にメンテナンス することができます。 
+D. これは、同じバージョンの Linux カーネルソースコードとは別にダウンロードして提供されます。 
+
+解答：A  
+ 
+51 : 論理ボリュームを作成してそれを Linux システム上で使用するために使用される、次のシーケンスには 2 つの LVM コマンドがありませんか？ 
+pvcreate, ___________, __________, mkfs, mount  
+
+A. lvcreate、mdadm  
+B. lvcreate、vgcreate  
+C. lvmcreate、vgcreate  
+D. vgcreate、lvcreate  
+E. vgcreate、mdadm  
+
+解答：D  
+ 
+52 : iSCSI ターゲットをマウントするときに、/etc/fstab にはどのマウントオプションを使用する必要がありますか？ 
+A. _santarget  
+B. iscsi  
+C. waitiscsi  
+D. _netdev
+  
+解答：D  
+ 
+53 : update-rc.d コマンドの -f オプションは、/etc/rcX.d/ および /etc/init.d/ディレクトリのファイルにどの影響を与えますか？ 
+A. リンクが読み込み専用の場合でも、/etc/rcX.d/のシンボリックリンクを強制的に削除します 
+B. /etc/rcX.d/のシンボリックリンクと/etc/init.d/の init スクリプトの両方を削除します 
+C. /etc/init.d/の init スクリプトと/etc/rcX.d/のシンボリックリンクを削除し、インストールされているファ イルのパッケージ情報を更新します 
+D. 対応する init スクリプトが/etc/init.d/にまだ存在していても、/etc/rcX.d/のシンボリックリンクを強制的に削除します。
+ 
+解答：D  
+ 
+54 : 入力問題 
+マウントされたユーザ fred が USB フラッシュデバイスに書き込み可能にするために、/etc/fstab から次の行に欠けているキーワードはどれですか？ 
+/dev/sda1 /mnt/usbflash vfat defaults,users,______=fred,umask=022, 0 0
+
+解答：uid  
+ 
+55 : 次のうち、現在のシステムの IPv4 ネイバーを列挙するコマンドはどれですか？これには、IP アドレスと MAC アドレスが含まれます。 (2 つ選択。） 
+A. arp  
+B. ifconfig -lv eth0  
+C. netstat -al  
+D. ip neigh show
+  
+解答：A、D  
+ 
+56 : 論理ボリュームのサイズを増やした後には、どのアクションを実行する必要がありますか？
+A. vgresize を実行します。 
+B. 論理ボリュームに使用されるファイルシステムのサイズを増やします。 
+C. lvresize を実行します。 
+D. 論理ボリュームを再マウントします。 
+
+解答：B  
+ 
+57 : modules.dep ファイルはどの情報を提供しますか？ 
+A. コンパイルされているかどうかにかかわらず、カーネルが利用できるすべてのモジュールのリスト。 
+B. インストールされたカーネルが信頼するモジュールのリスト。 
+C. デバイスとそのモジュール名のリスト。 
+D. コンパイルされたすべてのモジュールとその依存関係のリスト。 
+E. カーネルが実行する必要があるモジュールのリスト。 
+
+解答：D  
+ 
+58 : 何らかのコマンドを使用して、ある時点でバックアップ目的で論理ボリュームを正確にコピーしますか？ 
+A. lvsnap  
+B. lvsnapshot  
+C. lvcreate  
+D. lvcopy  
+E. lvclone
+ 
+解答：C  
+ 
+59 : ブート中にルートファイルシステムが読み取り専用でマウントされ、後で書き込み許可で再マウントされるのはなぜですか？
+A. ブート中にルートファイルシステムの問題が検出された場合、fsck を実行することができます。これにより、破損の危険がありません。 
+B. この方法では、クラッカーはブートスニファーでルートに関する情報を収集することができないためです。 
+C. root パスワードがわかっていない限り、ディスクへの書き込みを避ける。 
+D. 他のオペレーティングシステムが Linux のルートパーティションを上書きしないようにする。 
+E. ディスクにはオペレーティングシステムによって変更できない独自の書き込み保護機能があるためです。 
+
+解答：A  
+ 
+60 : システムマウントユニットの目的は何ですか？ 
+A. これは systemd-mount コマンドによって使用され、ユーザーは選択したマウントポイントにパーティションをマウントできます 
+B. ネットワークファイルシステムをローカルマウントポイントにマウントするためにのみ使用されます。ローカルメディアには使用できません 
+C. /etc/fstab のエントリをシステムのブートプロセスに統合するために、systemd-fstab-generator コマンドによって作成されます 
+D. これは、システムを使用してファイルシステムをマウントまたはマウント解除するときに、コマンド mount によって使用されます 
+
+解答：A  
+ 
+61 : 次のうち tcpwrapper が使用する設定ファイルはどれですか？ 
+A. /etc/tcpd.allow および etc/tcpd.deny  
+B. /etc/tcpwrapper.allow と/etc/tcpwrapper.deny  
+C. /etc/hosts.allow と/etc/hosts.deny  
+D. /etc/service.allow と/etc/service.deny  
+
+解答：C 
+ 
+62 : 次の出力例では、CPU が非カーネルコードの実行に費やした時間の割合と、CPU がカーネルコードの実行に費やした時間の割合を示しています。(2 つ選択。） 
+# vmstat 1 100  
+procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu---- r b swpd free buff cache si s  o bi bo in cs us sy id wa  
+0 0 0 282120 134108 5797012 0 0 0 2 0 0 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 359 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1117 577 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 366 0 0 100 0  
+
+A. id  
+B. us  
+C. wa  
+D. sy  
+
+解答：B、D  
+ 
+63 : autofs のメイン設定ファイルには次のエントリがあります：/home/etc/auto.home /etc/auto.home ファイルの意味は？ 
+A. ファイルシステムをマウントするための間接的なマップがあります。 
+B. これには、リモートファイルサーバーのパスワードやキーなどの構成情報が含まれています。 
+C. / home マウントポイントの設定に関する設定情報があります。 
+D. これは、リモートファイルサーバーへの認証を許可する SSL キーを保持します。 
+
+解答：A  
+ 
+64 : メイクファイルがソースコードパッケージに含まれている場合、ファイル内で一般に定義されているターゲットは何ですか？ 
+A. CFLAGS, CPPFLAGS, LIBS, LDFLAGS 
+B. clean, install, uninstall  
+C. PATHS, DESTDIR, LIBS, LDFLAGS  
+D. prefix, exec_prefix, bindir, mandir  
+
+解答：B  
+ 
+65 : crypsetup のサブコマンドに暗号化された LUKS パーティションに関する情報が表示されますか？ 
+A. luksDump  
+B. luksInfo  
+C. luksDebug  
+D. luksLS  
+E. luksShow
+  
+解答：A  
+ 
+66 : インタレストプロセスのリストと識別を支援するのはどれですか？ (2 つ選択。） 
+A. acpid  
+B. lsof  
+C. pstree  
+D. telinit
+  
+解答：B、C  
+
+67 : 新しいカーネルを手作業でコンパイルしてインストールしたら、initramfs に関して何をしなければならないのですか？ 
+A. initramfs はカーネルから独立しているため、マシンのハードウェア構成が変更されていない限り変更しないでください 
+B. initramfs にはカーネルモジュールが含まれているので、新しい initramfs を新しいカーネル用に構築する必要があります 
+C. Linux カーネルのコンパイル時に、新しい initramfs が自動的に構築されます。新しい initramfs だけをインストールする必要があります 
+D. initramfs は、システムの起動時に新しいカーネルのために再構成されるため、システムを再起動する必要があります
+ 
+解答：C  
+ 
+68 : システム上の監視情報を収集するために collectd はどのメカニズムを使用しますか？ 
+A. プラグインのライブラリを使用します。 
+B. マスターサーバーは各マシンの collectd サービスに接続して情報を取得します。 
+C. 各サーバーで独自の情報を収集し、それをマスターサーバーに送信します。 
+D. これは、監視されているクライアントに対して SNMP 照会を行います。 
+
+解答：A  
+ 
+69 : 次の出力では、CPU が保留中の I/O を待っていた時間は何％ですか？ 
+# vmstat 1 100  
+procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu---- r b swpd free buff cache si s  o bi bo in cs us sy id wa  
+0 0 0 282120 134108 5797012 0 0 0 2 0 0 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 359 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1117 577 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 366 0 0 100 0  
+
+A. 0  
+B. 100  
+C. 35.9 
+D. 57.7  
+E. 36.6
+  
+解答：A  
+ 
+70 : マスタブートレコードに GRUB ブートローダをインストールするコマンドはどれですか？ 
+A. grub-install  
+B. grub-mkconfig  
+C. grub-install-mbr  
+D. grub-glue-mbr  
+E. grub-mbr-setup  
+
+解答：A  
+ 
+71 : この例の出力では、どの記述がフリー、バフ、およびキャッシュ列の目的と一致していますか？ (3 つ選択。） 
+# vmstat 1 100  
+procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu---- r b swpd free buff cache si s  o bi bo in cs us sy id wa  
+0 0 0 282120 134108 5797012 0 0 0 2 0 0 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 359 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1117 577 0 0 100 0  
+0 0 0 282120 134108 5797012 0 0 0 0 1007 366 0 0 100 0  
+
+A. 使用されるスワップスペース 
+B. ファイルシステムバッファに使用可能な RAM  
+C. 利用可能な空き RAM  
+D. バッファに使用される RAM  
+E. ファイルシステムキャッシュに使用される RAM 
+
+解答：C、D、E 
+ 
+72 : 以下のカーネル IP ルーティングテーブルを考慮して、ネットワーク 10.10.1.0/24 へのルートを削除するには、次のコマンドのどれを使用する必要がありますか？ 2 つの回答を選択 
+Kernel IP routing table Destination Gateway Genmask Flags Metric Ref Use Iface  2 03.0.113.162 0.0.0.0 255.255.255.255 UH 0 0 0 ppp0  
+1 72.16.87.0 0.0.0.0 255.255.255.0 U 0 0 0 eth0  
+1 92.168.246.0 0.0.0.0 255.255.255.0 U 0 0 0 eth1  
+1 0.10.1.0 192.168.246.11 255.255.255.0 UG 0 0 0 eth1  
+1 27.0.0.0 0.0.0.0 255.0.0.0 U 0 0 0 lo  
+0 .0.0.0 203.0.113.162 0.0.0.0 UG 0 0 0 ppp0  
+
+A. ip net delete 10.10.1.0/24  
+B. route del 10.10.1.0/24  
+C. route del -net 10.10.1.0/24  
+D. route del 10.10.1.0/24 gw 192.168.246.11  
+E. ip route delete 10.10.1.0/24  
+
+解答：C、E  
+ 
+73 : ホスト名を IP アドレスに解決するために使用される次のファイルはどれですか？ (2 つ選択。） 
+A. /etc/systems  
+B. /etc/hosts  
+C. /etc/network  
+D. /etc/dns.conf  
+E. /etc/resolv.conf  
+解答：B、E  
+ 
+74 : 次のコマンドのどれが、アーカイブ lpifiles.tar.gz からその名前の lpi を含むファイルだけを復元しますか？
+A. tar xvzf lpifiles.tar.gz --wildcards '*lpi*'  
+B. tar xvzwf lpifiles.tar.gz '*lpi*'  
+C. tar -xvfz lpifiles.tar.gz --deep '*lpi*'  
+D. tar -xvzf lpifiles.tar.gz --subdirs '*lpi*'  
+
+解答：A  
+ 
+75 : 入力問題 
+システムが SysV-init ランレベル 2 で起動している間に実行されるスクリプト（または元のスクリプトへ のリンク）を含むディレクトリへの完全パスは何ですか？ 
+
+解答：/etc/rc2.d、/etc/rc2.d/、/etc/init.d/rc2.d、/etc/init.d/rc2.d/  
+ 
+76 : 入力問題 
+どのキーワードが /etc/inittab ファイルで SysV-init のデフォルトシステムランレベルを定義するために 使用されていますか？ 
+
+解答：initdefault  
+ 
+77 : SysV-init 設定ファイルのデフォルトのランレベルを変更すると、システムは意図したランレベル以外のシステムで起動します。他にこの異なるランレベルを定義できますか？ 
+A. In the /etc/sysctl.conf  
+B. In the boot loader configuration file  
+C. In the /etc/runlevel file  
+D. In the /boot/initramfs file  
+E. In the /etc/rc.d/rc.local file  
+
+解答：B 
+ 
+78 : 次の出力では、システムの負荷平均値は 5 分ですか？ 
+# uptime 12:10:05 up 18 days, 19:00, 2 users, load average: 0.47, 24.71, 35.31  
+A. 0.47  
+B. 24.71  
+C. 35.31  
+D. 5 分間隔はありません。 0.47 から 24.71 の間の値です。 
+E. 5 分間隔はありません。それは 24.71 から 35.31 の間の値です。 
+
+解答：B  
+ 
+77 : 入力問題 
+新しいカーネルを設定した後、/usr/src/linux/ の下のどのファイルに設定が含まれていますか？ 
+
+解答：/usr/src/linux/.config、.config  
+ 
+78 : コマンド ping が文字列（DUP！）を出力する状況は次のうちどれですか？ 
+A. ICMP パケットがブロードキャストアドレスに送信され、複数のホストが応答するとき 
+B. ICMP パケットを送信するホストが別のネットワーク上にある場合。 
+C. ルータが ICMP パケットを受信するホストに加えて、ICMP パケットに応答するとき。 
+D. ICMP パケットを送信するホストが、ICMP パケットを受信したホストと同じホストである場合。 
+
+解答：A  
+ 
+79 : ダミーというカーネルモジュールの物理パスを表示する次のコマンドはどれですか？ 
+A. modprobe -i dummy  
+B. modinfo -n dummy  
+C. modpath -v dummy 
+D. depmod -n dummy  
+E. modshow -p dummy  
+
+解答：A  
+ 
+80 : 実行中のシステムで共有メモリセグメント（shmmax）の最大サイズのカーネルパラメータを 2GB （2147483648 バイト）に変更するにはどうすればよいですか？ (2 つ選択。） 
+A. /etc/shmmax を編集し、パラメータを 2147483648 に設定します。 
+B. sysctl shmmax = 2147483648  
+C. sysctl kernel.shmmax = 2147483648  
+D. echo 2147483648> /proc/sys/kernel/shmmax  
+E. export kernel.shmmax = 2147483648
+  
+解答：C、D  
+ 
+81 : 入力問題 
+データベースアプリケーションでは、2GB（2147483648 バイト）の最大共有メモリーセグメント（shmmax） が必要です。 
+このカーネルパラメータを永久に設定するには、どの設定ファイルを変更する必要がありますか？ パスを含むファイルの完全な名前を指定してください） 
+
+解答：/etc/sysctl.conf  
+ 
+82 : 入力問題 
+多くの書き込み操作の後、管理者は、カーネルがファイルシステムバッファをディスクにフラッシュするようにします。これを達成するコマンドはどれですか？
+
+解答：sync  
+ 
+83 : 入力問題 
+次の /etc/fstab ファイルを検討してください。 
+/dev/hda1 swap swap defaults 0 0  
+/dev/hda2 / ext2 defaults 1 1  
+/dev/hda3 /home ext2 defaults 1 2  
+none /proc proc defaults 0 0  
+/dev/sdb1 /media/usb0 vfat user,noauto 0 0
+  
+84 : 普通の（root 以外の）ユーザーが /dev/sdb1 パーティションを /media/usb0 マウントポイントにマウントするために使用できるコマンドの 1 つは何ですか？ 
+すべてのパラメータやオプションでコマンドを入力しますが、ファイルシステムタイプのオプションは入力しないでください）。 
+
+解答：mount /dev/sdb1, mount /media/usb0, /bin/mount /dev/sdb1, /bin/mount/media/usb0, mount  /media/usb0/, /bin/mount /media/usb0/  
+ 
+85 : 入力問題 
+どのファイルに、コンソールにログインした後に表示されるテキストメッセージが含まれていますか？ パスを含むファイルの完全な名前を指定します。） 
+
+解答：/etc/motd  
+ 
+86 : /dev/sda1 上の ext2 ファイルシステムにラベルルートを追加するにはどうすればよいですか？ 
+A. relabel /dev/sda1 root  
+B. tune2fs -L root /dev/sda1  
+C. echo 'root' > /proc/fs/sda1/label  
+D. labelfs --device /dev/sda1 root  
+
+解答：B 
+ 
+87 : 入力問題 
+どのプログラムがプロセスによってオープンされたファイルとネットワーク接続に関する情報をリストしていますか？ 
+
+解答：lsof、/usr/bin/lsof  
+ 
+88 : sysctl コマンドを使用してカーネルパラメータを変更するときに変更されるファイルは、どのディレクトリツリーですか？ 
+A. /sys/kernel/  
+B. /proc/kernel/  
+C. /proc/sys/  
+D. /lib/sys/  
+E. /sys/proc/  
+
+解答：C  
+ 
+89 : patch コマンドの-p3 オプションは何をしますか？ 
+A. パッチファイルに記載されている各ファイルから 3 番目の/文字までのパス情報を削除します。 
+B. 3 つ以下のエラーがある限り、パッチは実行を継続します。 
+C. それは、マッチのために元のファイル内の宣言された行の前後に 3 行までの文脈を検索するように patch に指示します。 
+D. パッチは、変更履歴の消失を防ぐために、各ファイルの以前の 3 つのバージョンを出力に保持します。 E. これは、POSIX 標準に厳密に準拠するようパッチに指示します。 
+
+解答：A 
+ 
+90 : どのコマンドを使ってモジュールを Linux カーネルにロードするのですか？ (2 つ選択。） 
+A. insmod  
+B. loadmod  
+C. kernload  
+D. modprobe  
+E. probemod  
+
+解答：A、D  
+ 
+91 : 入力問題 
+新しい機能を使用するには、新しいカーネルバージョンをコンパイルする必要があります。古いカーネル 設定ファイルが利用可能な場合、make はどのカーネルの設定に基づいて新しいカーネルの設定ファイル を作成しますか？ 
+
+解答：oldconfig、make oldconfig  
+ 
+92 : Linux システムの起動時に initramfs の目的は何ですか？ 
+A. 必要なモジュールをロードし、LVM のようなサブシステムを起動して、カーネルがルートファイルシステムにアクセスできるようにします 
+B. カーネルを通常のシステムメモリから initram メモリに移動し、カーネルアクセスを高速化します 
+C. システムを高速化し、ディスクへの書き込みを減らすために、ルートファイルシステムの内容を RAM にコピーします 
+D. これは、ディスクへの書き込みを減らすために、/tmp のようなディレクトリの揮発性データを格納する RAM ディスクを作成します 
+
+解答：A 
+ 
+93 : smartd デーモンの目的は何ですか？ 
+A. これは、スマートカードおよび集積回路チップの読み取りに使用されるユーザースペースデーモンです。 
+B. ファイルシステムのチェックに失敗したときにファイルシステムを自動的に修復しようとします。 
+C. プロセスのアクティビティを監視し、カーネルがオーバーコミットしたときにどのプロセスを強制終了するかをカーネルが決定するのを助けます。 
+D. 特定のディスクドライブを監視し、いつ障害が発生するかを予測しようとします。 
+
+解答：D  
+ 
+94 : autofs のメイン設定ファイルには次のエントリがあります： /home/etc/auto.home  
+/etc/auto.home ファイルの意味は？ 
+
+A. ファイルシステムをマウントするための間接的なマップがあります。 
+B. これには、リモートファイルサーバーのパスワードやキーなどの構成情報が含まれています。 
+C. / home マウントポイントの設定に関する設定情報があります。 
+D. これは、リモートファイルサーバーへの認証を許可する SSL キーを保持します。 
+
+解答：A  
+ 
+95 : /etc/init.d/test2 スクリプトがまだ存在する場合でも、update-rc.d コマンドのどのオプションによって /etc/rcX.d/*test2 へのすべてのシンボリックリンクが削除されますか？ 
+
+A. -d  
+B. -f  
+C. -n  
+D. -r  
+
+解答：B 
+ 
+96 : IDE ハードドライブ/dev/hda には DMA が有効になっていません。DMA を有効にするには、どのコマンドを実行する必要がありますか？ 
+A. hdparm -d /dev/hda  
+B. hdparm --dma /dev/hda  
+C. hdparm --dma /dev/hda1  
+D. hdparm -d /dev/hda1  
+E. hdparm -d 1 /dev/hda  
+
+解答：E  
+ 
+97 : udevadm コマンドの目的は何ですか？ 
+A. udev ルールによって生成されたカーネルイベントを Listen し、情報をコンソールに出力します。 
+B. 新しいデバイスの/ dev ディレクトリを監視します。 
+C. udev プロセスを監視し、パフォーマンス統計情報をコンソールに出力します。 
+D. D-Bus と通信して新しいデバイスを設定します。 
+
+解答：A  
+ 
+98 : 特定のネットワークをスキャンして、使用中のように見える IP アドレスを探すために、どのコマンドを使用できますか？ 
+A. nmap  
+B. tcpdump  
+C. ip  
+D. netscan  
+E. hostdiscover  
+
+解答：A 
+ 
+99 : 以下のコマンドのどれは、リモートファイルシステム接続に関するデータを収集するのに便利ですか？ (2 つ選択。） 
+  
+A. pidstat  
+B. nfsiostat  
+C. sadf  
+D. cifsiostat  
+
+解答：B、D  
+ 
+100 : /proc 内のどのファイルにローカルソフトウェア RAID デバイスの状態に関する情報が入っていますか？ 
+A. /proc/raid/status  
+B. /proc/mdstatus  
+C. /proc/raidstatus  
+D. /proc/mdstat
+  
+解答：D  
+ 
+101 : vgextend コマンドの目的は何ですか？ 
+A. ディスク上のボリュームグループのフットプリントを拡張します。 
+B. 既存のボリュームグループに物理ボリュームを追加します。 
+C. スケジュールされたエラーチェックの日数を増やします。 
+D. ディスク上のすべての空き領域を使用するボリュームグループを作成します。 
+
+解答：B  
+
+102 : LILO ブートローダーコードは通常、Linux インストールが 1 つしかなく、他のオペレーティングシステムがインストールされていないシステムにインストールされていますか？ 
+A. マスターブートレコード。 
+B. ブートセクタで。 
+C. /boot ディレクトリにあります。 
+D. カーネルの始めに。 
+
+解答：A  
+ 
+103 : ネットワーククライアントには、サブネット 192.168.0.0/24 の IP アドレスで設定されたイーサネットイ ンターフェイス（eth0）があります。このサブネットには、このサブネットをインターネットに接続する IP アドレス 192.168.0.1 のルーターがあります。クライアントがデフォルトゲートウェイとしてルータを使用できるようにするには、クライアントで何を行う必要がありますか？ (2 つ選択。） 
+A. route add default gw 192.168.0.1 eth0  
+B. ifconfig eth0 defaultroute 192.168.0.1  
+C. ip route add default via 192.168.0.1 dev eth0  
+D. echo defaultroute 192.168.0.1 >> /etc/resolv.conf  
+E. route add defaultgw=192.168.0.1 if=eth0  
+
+解答：A、C  
+ 
+104 : 入力問題 
+どのディレクトリにシステム固有の udev ルールファイルが入っていますか？ ディレクトリ名を含む絶対パスを指定してください） 
+
+解答：/etc/udev/rules.d、/etc/udev/rules.d/  
+
+105 : 次のうち、Linux ソフトウェア RAID アレイへのパスの例はどれですか？ 
+A. /dev/raid0  
+B. /dev/rd1  
+C. /dev/pr0  
+D. /dev/md1
+  
+解答：D  
+ 
+106 : 次のうち Linux システム上の EFI エントリを変更するために使用されるユーザースペースアプリケーションはどれですか？ 
+A. efieditor  
+B. configefi  
+C. efimanager  
+D. efiboottmgr  
+E. efibootedit  
+
+解答：D  
+ 
+107 : PXE プロトコルで使用される主なネットワークサービスは何ですか？ (2 つ選択。） 
+A. DNS  
+B. DHCP  
+C. HTTP  
+D. TFTP  
+E. NFS  
+
+解答：B、D 
+ 
+108 : サーバーには GRUB2 ブートオプションが必要です。これは常にランレベル 1 で起動します。 この新しい選択肢を利用できるようにするために必要な設定の開始は、GRUB2 設定ファイルのどの行で 始まりますか？ 
+A. initrd  
+B. linux  
+C. menuentry  
+D. runlevel
+  
+解答：B  
+ 
+109 : 次のうち、ルートパーティションに使用される一般的な Linux ファイルシステムの種類はどれですか？ (3 つ選択。） 
+A. ext4  
+B. VFAT  
+C. NTFS  
+D. XFS  
+E. Btrfs
+  
+解答：A、D、E  
+ 
+110 : 入力問題 
+接続されたハードディスクの UUID を特定するために使用できる /dev/disk/ ディレクトリはどれですか？ 
+
+解答：/dev/disk /by-uuid、by-uuid、/dev/disk/by-uuid/  
+
+111 : /etc/hosts にあるこれらのエントリに関する誤った点は、host2 でホスト名の検索に問題が発生している可能性がありますか？ 
+host1 192.168.1.12  
+host2 192.168.1.12
+
+A. 2 つのホスト名が同じ IP アドレスを使用しています。 
+B. クエリを実行しているサーバーは別のサブネットにあります。 
+C. フィールドの順序が間違っています。 
+D. host2 は完全修飾ドメイン名ではありません。 
+
+解答：C  
+ 
+112 : 次のコマンドは正常に実行されました。 cd /opt; tar xvf /dev/nst0;  
+コマンドシーケンスを再度実行するとどうなりますか？ 
+
+A. テープが使用された後に排出されたため、テープが存在しないというエラーが生成されます。 
+B. /opt の内容が再びリストアされます。 
+C. /opt の全内容は、テープ上の次のファイルの内容に置き換えられます。 
+D. /opt の内容には、テープ上の次のファイルから追加の内容が追加されます。 
+
+解答：D  
+ 
+113 : どのコマンドが /mnt に volume という名前の Btrfs サブボリュームを作成しますか？ 
+A. btrfs subvolume add -n volume /mnt  
+B. btrfs create subvolume /mnt volume  
+C. btrfs-subvolume create /mnt/volume  
+D. btrfs subvolume new volume /mnt  
+E. btrfs subvolume create /mnt/volume  
+
+解答：E 
+ 
+114 : fsck は、参照されていないファイルやファイルの断片を ext4 ファイルシステムにどこに置くのですか？ 
+
+A. recover  
+B. lost+found  
+C. back  
+D. lost  
+
+解答：B  
+ 
+115 : ミラー化されたデバイスのアレイを作成するには、Linux ソフトウェア RAID でどの RAID レベルの値を使用する必要がありますか？ 
+
+A. 1  
+B. 5  
+C. 6  
+D. container  
+E. mirrorstripe  
+
+解答：A  
+ 
+116 : 次のうち、Linux で使用される一般的なバックアップシステムはどれですか？ (2 つ選択。） 
+A. アマンダ 
+B. Bacula  
+C. DrBackup  
+D. BREWBackup  
+E. SARcheck
+  
+解答：A、B 
+ 
+117 : 起動時に、Linux カーネルが initramfs ファイルをロードすると、initramfs からのコマンドが最初に実行されます（存在する場合）。 
+A. /init  
+B. /initrd  
+C. /linuxrc  
+D. /rc.local  
+E. /sbin/init  
+
+解答：A  
+ 
+118 : 現在マウントされているデバイスと使用されているオプションに関する情報を提供するために、デバイスがマウントされマウント解除されると、どのファイルが更新されますか？ (2 つ選択。） 
+
+A. /proc/dtab  
+B. /etc/mtab  
+C. /etc/fstab  
+D. /proc/mounts  
+E. /proc/devices  
+
+解答：B、D  
+ 
+119 : autofs で使用されるテンプレートファイルは何ですか？ 
+A. default.maps  
+B. auto.conf  
+C. auto.master  
+D. autofs.master  
+
+解答：C 
+ 
+120 : 次のうち、CD-ROM ファイルシステム標準はどれですか？ 
+A. OSI9660  
+B. ISO9660  
+C. SR0FS  
+D. ISO8859  
+E. ROM-EO  
+
+解答：B  
+ 
+121 : 次のコマンドで使用できるフィルタキーワードはどれですか？(3 つ選択） 
+tcpdump -i eth0 ____________ 203.0.113.8  
+ 
+A. host  
+B. ip  
+C. src  
+D. dst  
+E. ipv6  
+
+解答：A、C、D  
+ 
+122 : 入力問題 
+ローカルネットワークのユーザーは、名前解決が十分に速くないと不平を言う。パスまたは任意のオプションを指定せずに、DNS クエリの解決に要した時間を示すコマンドを入力します。 
+
+解答：dig, time dig, time host, time nslookup  
+
+123 : どの/etc/hosts.allow エントリが 192.168.1.0/24 サブネットのユーザの sshd へのアクセスを許可するのですか？(2 つ選択）
+ 
+A. sshd : 192.168.1.  
+B. sshd : 192.168.1  
+C. sshd : 192.168.1.0 netmask 255.255.255.0  
+D. sshd : 192.168.1.0/255.255.255.0  
+E. sshd : 192.168.1.0  
+
+解答：A、D  
+ 
+124 : ネットワークリンクの品質を監視するために記録する必要があるプロパティはどれですか？ (2 つ選択。） 
+A. 双方向の帯域幅 
+B. リンクを使用するノードの数 
+C. 実効レイテンシ 
+D. IPv4 パケットと IPv6 パケットの数 
+E. 使用されている TCP ポートの数 
+
+解答：A、C  
+ 
+125 : 入力問題 
+アンロードせずに現在カーネルによってロードされている 1 つのモジュールをアンロードするコマンドは ＿＿？ 
+
+解答：rmmod、/sbin/rmmod  
+ 
+126 : 入力問題
+ボリュームグループから＿＿＿？ 
+
+解答：vgreduce、/sbin/vgreduce  
+ 
+127 : 入力問題 
+接続されたハードディスクの UUID を特定するために使用できる /dev/disk/ ディレクトリはどれです か？ 
+
+解答：/dev/disk/by-uuid、by-uuid、/dev/disk/by-uuid/  
+ 
+128 : 次の選択肢のどれがシステムサイジングに影響する Web サーバーを計画していますか？ (3 つ選択。） 
+A. 並行ユーザー数は予想されます。 
+B. どのハードウェアベンダーが Linux のサポートを強化していますか？ 
+C. どんなタイプのコンテンツが配信されるのですか？ 
+D. Web サーバーがサポートするスクリプト言語は何か。 
+E. OS のインストールは、CD、DVD、またはネットワークをベースにしていますか？ 
+
+解答：A、C、D  
+ 
+129 : リソース使用の履歴データはいつ重要ですか？ （3 つ選択） 
+A. いつリソースを増やす必要があるか予測する。 
+B. コンピュータベンダーの選択。 
+C. メモリ不足時に殺されたプロセスを識別する。 
+D. 容量の問題を診断する。 
+E. ソフトウェアの問題のトラブルシューティング
+解答：A、D、E  
+ 
+130 : smartd はシステムのどのコンポーネントを監視していますか？ 
+A. CPU  
+B. RAM  
+C. ハードドライブ 
+D. イーサネットトラフィック 
+
+解答：C  
+ 
+131 : /proc 内のどのファイルにローカルソフトウェア RAID デバイスの状態に関する情報が入っていますか？ 
+A. /proc/raidstat  
+B. /proc/mdstat  
+C. /proc/raidstatus  
+D. /proc/mdstatus  
+E. /proc/raid/status
+  
+解答：B  
+ 
+132 : 入力問題 
+SSD デバイスをサポートするために、マウントされたファイルシステム上の未使用のブロックを破棄するコマンドは何ですか？
+
+解答：fstrim  
+ 
+133 : SysV-init を持つシステムには、apache2 という名前のサービスがインストールされています。 どのファイルがこのサービスの開始と停止を制御し、さまざまなランレベルディレクトリによって参照さ れていますか？ 
+A. /etc/init.d/apache2  
+B. /etc/rc2.d/70apache2  
+C. /etc/rc2.d/apache2  
+D. /etc/rc2.d/apache2.start
+  
+解答：A  
+ 
+134 : 次のうちスワップ領域の広範な使用の副作用はどれですか？ 
+A. スワップ領域は常にシステムのルートパーティション上にあるため、ルートファイルシステムがいっぱいになることがあります。 
+B. ハードディスクの使用量やメモリの再編成により、システム全体のパフォーマンスが低下することがあります。 
+C. プロセスは常に RAM またはスワップのいずれかに完全に存在するため、カーネルがスワップ領域からメモリにプロセスを戻さない場合、通常の RAM は使用されなくなる可能性があります。 
+D. メモリが断片化し、メモリページへのアクセスが遅くなる可能性があります。 しかし、これは memfrag -d を定期的に使用することで最小限に抑えることができます。 
+E. スワップアドレス領域へのメモリ再配置を反映するために仮想メモリアドレスが変更されるため、アプ リケーションを再起動する必要があります。 
+
+解答：B  
+ 
+135 : iscsid.conf ファイルの node.startup にはどのオプションがありますか？ (2 つ選択。） 
+A. login  
+B. initiate  
+C. manual 
+D. discover  
+E. automatic
+  
+解答：C、E  
+ 
+136 : Web アプリケーションサーバーには 64GB の RAM と通常のハードディスクドライブに 2 つのスワップパ ーティションがあり、サイズはそれぞれ 64GB です。先月、このサーバー上のユーザーセッションの平均 数は 20％増加しました。同時に、RAM の平均使用率は 65 から 75％に増加しましたが、スワップ領域は ほとんど使用されていませんでした。ユーザーセッション数は毎月約 15〜20％増加することが予想されます。 
+次のうちどれが、これらの観察に応じて反応が適切ですか？ (2 つ選択。） 
+A. 使用可能なハードウェアの効率的な使用を保証するために、スワップ領域が大幅に消費されるまでハードウェアのアップグレードを延期する 
+B. 2 つのスワップパーティションに RAID 1 デバイスを作成して、将来スワップスペースを使用する必要がある場合のデータ損失を避ける 
+C. 予想される成長が数ヶ月にわたって続く場合、負荷を分散するために追加のアプリケーションサーバーをインストールすることを検討する 
+D. 迅速なアクセスを確保し、スワップスペースの必要性を避けるために、Web アプリケーションのスクリプトとコンテンツを RAM ディスクに移動する 
+E. スワップ領域を使用しないようにハードウェアを更新して RAM の容量を増やす 
+
+解答：C、E  
+ 
+137 : 入力問題 
+マウントされたユーザ fred が USB フラッシュデバイスに書き込み可能にするために、/etc/fstab から次の行に欠けているキーワード： 
+/dev/sda1 /mnt/usbflash vfat defaults,users,______=fred,umask=022, 0 0  
+(設定なしでのみオプション名を指定する） 
+
+解答：uid 
+ 
+138 : RAID 5 アレイ内の故障したデバイスをシミュレートするコマンドはどれですか？ 
+A. mdadm --remove /dev/md0 /dev/sdd1  
+B. mdadm --zero-superblock /dev/sdf3  
+C. mdadm --force-fault /dev/md2 /dev/sde2  
+D. mdadm --fail /dev/md0 /dev/sdc1  
+E. mdadm /dev/md0 --offline /dev/sdc1
+  
+解答：D  
+ 
+139 : 完全冗長 RAID5 アレイで必要なディスクの最小数はどれですか？ 
+A. 1  
+B. 2  
+C. 3  
+D. 4  
+E. 5  
+
+解答：C  
+ 
+140 : どのコマンドを使って新しい LILO ブートローダをインストールしますか？ 
+A. lilo  
+B. lilo-config  
+C. lilo-install  
+D. install-lilo  
+
+解答：A 
+ 
+141 : Linux カーネルを含むファイルが失われた場合、システムが起動するとどうなりますか？ 
+A. ブートローダがカーネルをハードディスクのマスタブートレコードにコピーするので、システムは正常に起動します。 
+B. カーネルの代わりに initramfs がロードされ、ルートファイルシステムをマウントし、元のパッケージまたはソースからカーネルを再インストールするように指示されます。 
+C. ブートローダは、管理者がカーネルを再インストールできるように、ルートファイルシステムを読み取 り専用でマウントし、/bin/sh を直接起動します。 
+D. カーネルがなければ、システムはブートできず、ブートローダによってはエラーが表示されます。 
+
+解答：D  
+ 
+142 : sar -b の出力では、tps は何を表していますか？ 
+A. テラバイト/秒 
+B. 1 秒あたりのトラフィック 
+C. 毎秒の転送 
+D. 1 秒あたりの合計データ 
+E. テラビット/秒 
+
+解答：C  
+ 
+143 : 極端なシステム使用のために、Linux システムには追加のスワップ領域が必要です。 5GBの追加スワップ領域を初期化するには、どのコマンドの組み合わせを使用する必要がありますか？ 
+A. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; mkswap /tmp/swapfile; mount  /tmp/swapfile  
+B. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; swapon /tmp/swapfile  
+C. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; mkswap /tmp/swapfile; swapon  /tmp/swapfile  
+D. touch -5G /tmp/swapfile; swapon /tmp/swapfile  
+E. mkswap /tmp/swapfile 512000; swapon /tmp/swapfile 
+
+解答：C  
+ 
+144 : ブート時にカーネルによって使用される initramfs ファイル（/boot/initramfs）に含まれるファイルを抽出するために使用できるコマンドシーケンスはどれですか？ 
+A. cp /boot/initramfs /tmp/initramfs.gz; gzip -c /tmp/initramfs.gz; mkdir /tmp/initramfs.dir; cd  /tmp/initramfs.dir; cpio -i < /tmp/initramfs  
+B. cp /boot/initramfs /tmp/initramfs.gz; gunzip /tmp/initramfs.gz; mkdir /tmp/initramfs.dir; cd  /tmp/initramfs.dir; cpio -i < /tmp/initramfs  
+C. cp /boot/initramfs /tmp/initramfs.gz; gunzip /tmp/initramfs.gz; mount /tmp/initramfs /mnt/ -o loop -t  initramfs  
+D. cp /boot/initramfs /tmp/initramfs.gz; gunzip /tmp/initramfs.gz; mkdir /tmp/initramfs.dir; cd  /tmp/initramfs.dir; cpio -e /tmp/initramfs  
+E. cp /boot/initramfs /tmp/initramfs.gz; gunzip /tmp/initramfs.gz; mount /tmp/initramfs /mnt/ -o loop -t  initrd  
+
+解答：B  
+ 
+145 : 次のうち、/dev/sdb3 パーティションの内容を消去するコマンドはどれですか？ 
+A. rm /dev/sdb3  
+B. dd if=/dev/zero of=/dev/sdb3  
+C. dd of=/dev/zero if=/dev/sdb3  
+D. umount /dev/sdb3  
+
+解答：B  
+ 
+146 : 起動時にカーネルに渡して使用可能なプロセッサーの 1 つだけを使用する正しいパラメーターは何です か？ 
+A. maxcpus=1  
+B. usecpus=1 
+C. smpcpus=1  
+D. vcpumx=1  
+
+解答：A  
+ 
+147 : どのコマンドを使用して、元の論理ボリュームを更新できるようにしながら、ある時点で論理ボリュームを正確にコピーしますか？ 
+A. lvcclone  
+B. lvcreate  
+C. lvm2  
+D. lvsnap  
+E. lvsnapshot  
+
+解答：B  
+ 
+148 : 入力問題 
+コンパイルされたカーネルをインストールした後、ロードする必要があるモジュールは見つかりません。カーネルのインストール中にターゲットを逃した可能性はありますか？ 
+
+解答：make modules_install、modules_install  
+ 
+149 : 極端なシステム使用のために、Linux システムには追加のスワップ領域が必要です。 5GB の追加スワップ領域を初期化するには、どのコマンドの組み合わせを使用する必要がありますか？ 
+A. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; mkswap /tmp/swapfile; mount  /tmp/swapfile  
+B. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; swapon /tmp/swapfile  
+C. dd if=/dev/zero of=/tmp/swapfile bs=1024 count=5120000; mkswap /tmp/swapfile; swapon  /tmp/swapfile  
+D. touch -5G /tmp/swapfile; swapon /tmp/swapfile 
+E. mkswap /tmp/swapfile 512000; swapon /tmp/swapfile  
+
+解答：C  
+ 
+150 : 3.x カーネルリリースの記述に使用される用語は次のうちどれですか？ (2 つ選択。） 
+A. beta  
+B. final  
+C. longterm  
+D. prerelease  
+E. stable  
+
+解答：C、E  
+ 
+151 : 次のうち、/etc/fstab ファイルの形式を最もよく表しているのはどれですか？ 
+A. device name; filesystem type; mount point; mount options; dump filesystem; fsck order  
+B. device name; mount point; filesystem type; mount options; dump filesystem; fsck order  
+C. device name; mount point; mount options; filesystem type; dump filesystem; fsck order  
+D. mount point; filesystem type; device name; dump filesystem; fsck order  
+E. mount point; device name; filesystem type; mount options; dump filesystem; fsck order  
+
+解答：B  
+ 
+ 
+152 : 次のファイルやシンボリックリンクのすべてが SysV-init ランレベルディレクトリに存在する場合、システムをランレベルに直接ブートするときに最初に実行されるものはどれですか？ 
+A. S99lpi  
+B. K99lpi  
+C. PRE-S99lpi  
+D. S98lpi  
+E. S99a-lpi  
+
+解答：D  
+ 
+153 : 入力問題 
+多くの書き込み操作の後にファイルシステムがディスクに書き込まれることを保証するコマンドは何ですか？ 
+
+解答：sync  
+ 
+154 : 以下は、tcpdump -nli eth1 'udp'の出力からの抜粋です。 
+1 3:03:17.277327 IP 192.168.123.5.1065 > 192.168.5.112.53: 43653+ A? lpi.org. (25)  1 3:03:17.598624 IP 192.168.5.112.53 > 192.168.123.5.1065: 43653 1/0/0 A 198.51.100.42 (41)  どのネットワークサービスまたはプロトコルが使用されましたか？ 
+A. FTP  
+B. HTTP  
+C. SSH  
+D. DNS  
+E. DHCP 
+
+解答：D  
+ 
+155 : 入力問題 
+どのディレクトリにシステム固有のシステムファイルが入っていますか？ ディレクトリへのフルパスを指定します。
+
+解答： /lib/systemd/system  
+ 
+156 : smartd はシステムのどのコンポーネントを監視していますか？ 
+A. CPU  
+B. RAM  
+C. ハードドライブ 
+D. イーサネットトラフィック 
+
+解答：C  
+ 
+157 : zImage と bzImage のカーネルイメージの主な違いは何ですか？ 
+A. zImage は gzip を使用して圧縮され、bzImage は bzip2 を使用して圧縮されます。 
+B. zImage は 2.6 系カーネル、bzImage は 3.x 系カーネルです。 
+C. zImage は 64k に制限されていますが、bzImage にはそのような制限はありません。 
+D. zImage は完全に低メモリにロードされます。 bzImage は一度低メモリにロードされます メモリがいっぱいです。 
+
+解答：D 
+ 
+158 : ソースコードからソフトウェアをコンパイルしようとしたときに、コマンドラインで別のファイルが指定されていない限り、次のファイルのどれが GNU make によって検索され使用されますか？ (2 つ選択。） 
+A. configure  
+B. config.h.in  
+C. makefile  
+D. Makefile  
+E. Makefile.in  
+
+解答：C、D  
+ 
+159 : ワイヤレスネットワークのリンク品質をチェックするために使用できるワイヤレスツールはどれですか？ (2 つ選択。） 
+A. iwconfig  
+B. iwlink  
+C. iwscan  
+D. iwifi  
+E. iw 
+ 
+解答：A、E  
+ 
+160 : リモートユーザアカウント kevin を使用してリモートホスト deltaur 上の /var/tmp /にディレクトリ./fyf/ を安全にコピーするコマンドはどれですか？ 
+A. rsync -a -e ssh kevin@deltaur:/var/tmp/ fyf/  
+B. rsync -a -u kevin -e ssh fyf/ deltaur:/var/tmp/ 
+C. rsync -a -u kevin -e ssh deltaur:/var/tmp/ fyf/  
+D. rsync -a -e ssh fyf/ kevin@deltaur:/var/tmp/  
+
+解答：D  
+ 
+161 : 次のコマンドのどれが /dev/sdb3 パーティションの内容を消去しますか？ 
+A. rm /dev/sdb3  
+B. dd if=/dev/zero of=/dev/sdb3  
+C. dd of=/dev/zero if=/dev/sdb3  
+D. umount /dev/sdb3  
+
+解答：B  
+ 
+162 : fsck は、参照されていないファイルやファイルの断片を ext4 ファイルシステムにどこに置くのですか？ 
+A. rm /dev/sdb3  
+B. dd if=/dev/zero of=/dev/sdb3  
+C. dd of=/dev/zero if=/dev/sdb3  
+D. umount /dev/sdb3  
+
+解答：B  
+ 
+163 : 特定のクライアントがサービスに接続できないように、正しくフォーマットされたエントリが /etc/hosts.deny に追加されましたが、これは効果がありません。原因は何でしょうか？ (2 つ選択。） 
+A. tcpd は HUP 信号を送信する必要があります。 
+B. サービスを再起動する必要があります。
+C. マシンを再起動する必要があります。 
+D. /etc/hosts.allow に競合するエントリがあります。 
+E. このサービスは tcpwrapper をサポートしていません。 
+
+解答：D、E  
+ 
+164 : どの情報が /proc/mdstat ファイルから抜粋していますか？ (2 つ選択。） 
+A. /dev/md0 内のディスクの 1 つに障害が発生し、スペアディスクを使用して完全な冗長性を再作成しています 
+B. スペアディスク /dev/sda1 は、現在のリカバリ後に完全な冗長性を復元するために使用されます 
+C. 情報[UU_]は、RAID が 1 つのディスクを欠いており、完全に冗長ではないことを意味します 
+D. デバイスはバージョン 1.2 メタデータを使用して、LILO と GRUB Legacy が /dev/md0 をブートパー ティションとして使用できるようにしています。これは GRUB2 では必要ないです 
+E. 情報[3/2]は、3 つの RAID ディスクがアレイに属し、2 つのディスクがスペアであることを意味します。 一緒に使用可能なディスクの数に等しいです 
+
+解答：A、C  
+ 
+165 : 入力問題 
+Filesystem Hierarchy Standard（FHS）によると、Linux カーネルソースへのパスとは何か、本当の Linux ソースコードへのシンボリックリンクかもしれませんか？ 
+
+解答：/usr/src/linux、/usr/src/linux/ 
+ 
+166 : 3.4.50-11 Linux カーネルを実行しているサーバーでは、/boot ディレクトリのどのファイルにカーネル構 成パラメータが入っていますか？ 
+A. config-linux-3.4.50-11  
+B. config-3.4.50-11  
+C. system-3.4.50-11  
+D. vmlinuz-3.4.50-11  
+E. rc.config-3.4.50-11
+  
+解答：B  
+ 
+167 : 入力問題 
+どのコマンドが既存の ext2 ファイルシステムを非破壊的に ext3 ファイルシステムにしますか？ 
+
+解答：/sbin/tune2fs、tune2fs  
+ 
+168 : 何を監視するかを定義するために、collectd 構成ファイルのどのオプションが必要ですか？ 
+A. LoadModule  
+B. Module  
+C. Plugin  
+D. LoadPlugin  
+
+解答：D  
+ 
+169 : 入力問題 
+どのファイルが GRUB に Linux 形式と GRUB 構文の両方でファイルシステムパーティションのパスを伝えますか？
+
+解答：device.map  
+ 
+170 : initramfs イメージの作成に使用するアーカイブ形式はどれですか？ 
+A. gzip  
+B. tar  
+C. RAR  
+D. cpio  
+E. bzip2  
+
+解答：D  
+ 
+171 : メモリ使用量、ページング、およびブロック入出力に関する情報を報告するコマンドはどれですか？ 
+A. free  
+B. memshow  
+C. ps  
+D. top  
+E. vmstat  
+
+解答：E  
+ 
+172 : 以下は、tcpdump -nli eth1 の出力からの抜粋です。 
+1 3:03:17.277327 IP 192.168.123.5.1065 > 192.168.5.112.21: Flags [.], ack 1 (truncated)  1 3:03:17.598624 IP 192.168.5.112.21 > 192.168.123.5.1065: Flags [P.], seq (truncated)  どのネットワークサービスまたはプロトコルが使用されましたか？ 
+A. FTP  
+B. HTTP  
+C. SSH  
+D. DNS  
+E. DHCP
+ 
+解答：A  
+ 
+173 : 入力問題 
+tcpdump を実行する-nli eth1 'tcp'は以下の出力を表示します： 
+14:41:53.694538 IP 10.1.52.145.51738 > 24.215.7.162.143: Flags [.], ack 33051, win 1002, options  [nop,nop,TS val 36789130 ecr 1746004159], length 0  
+このパケットの送信元 IP アドレスは何ですか？ 答えは数字とドットで指定してください。） 
+
+解答：10.1.52.145  
+ 
+174 : 次のコマンドのどれが、ワイヤレス・インターフェース wlan0 の機能と使用可能な周波数を示していますか？ 
+A. iw phy pyh0 info  
+B. iw dev wlan0 info  
+C. iw dev wlan0 show  
+D. iw phy wlan0 show  
+E. iw phy0 show  
+
+解答：A  
+ 
+175 : tcpdump の次のフィルタキーワードのうち、ネットワークパケットの転送方向を指定するのはどれですか？ (2 つ選択。） 
+A. source  
+B. src  
+C. dest  
+D. src or dst 
+E. both  
+
+解答：B、D  
+ 
+176 : 入力問題 
+現在ログインしているすべてのユーザーにメッセージを送信するために使用されるコマンドは何ですか？ 
+
+解答：wall  
+ 
+177 : 次のコマンドのどれが、ローカルシステムが直接接続された IP ネットワーク上で見たネットワークノード の IPv4 アドレスと MAC アドレスをリストしていますか？ 
+A. arp  
+B. ifconfig  
+C. ipadm  
+D. iwlist  
+
+解答：A  
+ 
+178 : 入力問題 
+どのファイルに、システムコンソールのログインプロンプトの上に表示されるメッセージが含まれていますか？ パスを含むファイルの完全な名前を指定します。） 
+
+解答：/etc/issue  
+
+179 : 通常のユーザー、ジョーは： 
+./configure && make && make install を実行すると、プログラムをビルドしてインストールします。ただし、インストールは失敗します。プログラムをインストールするには何ができますか？ (2 つ選択。） 
+A. suinstall を使用してバイナリを手動でインストールします。  
+B. root 権限で make install を実行します。 
+C. ./configure を実行して、正しいインストールのための設定を維持しませｎ。 
+D. ユーザーに書き込み権限がある--prefix オプションを指定して./configure を再実行します。 E. make install_local を実行して/usr/local/にインストールします。 
+
+解答：B、D  
+ 
+180 : これらのディレクトリのどれをバックアップしないですか？ 
+A. /backup  
+B. /etc  
+C. /opt  
+D. /proc  
+E. /var/log  
+
+解答：D  
+ 
+181 : 次のうち、静的 IPv6 アドレスをネットワークインターフェイス eth0 に追加するコマンドはどれですか？ 
+A. ip add addr 2001:db8::1337/64 dev eth0  
+B. ip -6 add addr 2001:db8::1337/64 dev eth0  
+C. ip addr add 2001:db8::1337/64 dev eth0  
+D. ip -6 addr add new 2001:db8::1337/64 dev eth0  
+E. ip addr add -6 2001:db8::1337/64 dev eth0  
+
+解答：D 
+ 
+182 : 入力問題 
+以下の tcpdump の出力によれば、クライアントホストの IP アドレスはなんですか？ 
+02:12:40.511381 IP 192.168.246.11.1045 > 192.168.246.1.22: S  
+3838532429:3838532429(0) win 5840 <mss 1460,sackOK,timestamp  
+31325740,nop,wscale 2>  
+02:12:40.511540 IP 192.168.246.1.22 > 192.168.246.11.1045: S  
+1209330085:1209330085(0) ack 383853 2430 win 5792 <mss 1460,sackOK,timestamp  11553457 3132574,nop,wscale 0>  
+0 2:12:40.511755 IP 192.168.246.11.1045 > 192.168.246.1.22: . ack 1 win 1460  < nop,nop,timestamp 3 132574 11553457>  
+0 2:12:40.515122 IP 192.168.246.1.22 > 192.168.246.11.1045: P 1:26(25) ack 1 win 5792  < nop,nop,timestamp 11553460 3132574>  
+0 2:12:40.515511 IP 192.168.246.11.1045 > 192.168.246.1.22: . ack 26 win 1460  < nop,nop,timestamp 3132578 11553460>  
+0 2:12:40.515952 IP 192.168.246.11.1045 > 192.168.246.1.22: P 1:23(22) ack 26 win 1460  < nop,nop,timestamp 3132578 11553460>  
+
+解答：192.168.246.11  
+ 
+183 : 複数のアクティブなネットワークインターフェイスを持つ Linux ノードでは、それぞれデフォルトルートがインターネットに接続されていますが、デフォルトルートが優先されますか？ 
+A. メトリック値が最も高いデフォルトルート 
+B. 最高の MTU 値を持つデフォルトルート 
+C. 最低の TTL 値を持つデフォルトルート 
+D. 最高の TTL 値を持つデフォルトルート 
+E. 最も低いメトリック値を持つデフォルトルート 
+
+解答：E  
+ 
+184 : システムには、ハードディスクと CD ライタがそれぞれ 1 つずつあり、どちらも SATA コントローラに接続されています。どのデバイスが CD ライターを表していますか？ 
+A. /dev/hdb  
+B. /dev/sdd  
+C. /dev/scd1  
+D. /dev/sr0  
+E. /dev/sr1  
+
+解答：D  
+ 
+185 : クライアントマシンが IP アドレス 192.168.0.1 上で実行されている再帰ネームサーバを確実に使用するためには何が必要ですか？ (2 つ選択。） 
+A. /etc/resolv.conf に nameserver 192.168.0.1 を追加します。 
+B. ルートを追加してネームサーバー192.168.0.1 を追加します。 
+C. ifconfig eth0 ネームサーバー192.168.0.1 を実行します。 
+D. dns サービスが/etc/nsswitch.conf ファイルの hosts エントリにリストされていることを確認します。 
+E. bind add nameserver 192.168.0.1 を実行します。 
+
+解答：A、D  
+ 
+186 : / etc / fstab の最後のフィールド（fsck の順序）の 0 は、ファイルシステムについて何を示していますか？ 
+A. より高い値を持つファイルシステムの前にファイルシステムをチェックする必要があります。 
+B. ファイルシステムは、より高い値を持つファイルシステムの後にチェックする必要があります。 
+C. ファイルシステムチェックカウンタは無視されます。 
+D. ファイルシステムはチェックされず、システムにマウントされていません。 
+E. ファイルシステムは、マウント時に fsck チェックを必要としません。 
+
+解答：E 
+ 
+187 : 入力問題 
+SystemV init プロセスの主要な設定ファイルはどれですか？ パスを含むファイルの完全な名前を指定します。） 
+
+解答：/ etc / inittab  
+ 
+188 : RAID ボリュームの設定に使用するコマンドは次のうちどれですか？ 
+A. makerd  
+B. mdadm  
+C. mkfs.raid  
+D. makeraid  
+E. rdconfig  
+
+解答：B  
+ 
+189 : 192.168.1.0/24 サブネット内にすでに 1 つの IP アドレスを持っているネットワークインターフェイス （eth0）に別の（192.168.1.2）を追加するコマンドは何ですか？ 
+A. ip add addr 192.168.1.2/32 dev eth0  
+B. ifconfig eth0 192.168.1.2 ネットマスク 255.255.255.255  
+C. ip addr add 192.168.1.2/32 dev eth0  
+D. ipconfig eth0 192.168.1.2  
+
+解答：C  
+ 
+190 : 変更を有効にするために syslogd の設定ファイルを更新したらどうしたらいいですか？ (2 つ選択。）
+A. 何もする必要はありませんが、syslogd は数分後に更新された設定ファイルに気付きます。 
+B. HUP シグナルを syslogd プロセスに送信します。 
+C. syslogd サービスを再起動します。 
+D. コマンド syslogd -u を実行します。 
+
+解答：B、C  
+ 
+191 : http://kernel.org からパッチ 4.6.4.xz をダウンロードした後、バージョン 4.6.4 Linux カーネルのビルドを 準備する次のステップは何ですか？ (2 つ選択。） 
+A. ファイルを解凍し、結果のディレクトリを/usr/src/linux に移動します 
+B. カーネルバージョン 4.6.0 を含むカーネルソースディレクトリにパッチファイルを適用する 
+C. カーネルバージョン 4.6.3 を含むカーネルソースディレクトリにパッチファイルを適用する 
+D. xz を使用してファイルを圧縮解除して、圧縮されていないパッチファイルを取得します 
+E. パッチを使用して、非圧縮パッチファイルを以前のカーネルバージョンのソースディレクトリに適用する 
+
+解答：D、E  
+ 
+192 : 入力問題 
+メインの SysV init プロセス設定ファイルへの完全なパスを入力してください。 
+
+解答：/etc/inittab  
+ 
+193 : 次のうち、UEFI ブートローダーが付属しているものはどれですか？ 
+A. systemd  
+B. SysVinit  
+C. Upstart  
+D. OpenRC 
+E. launchd  
+
+解答：A  
+ 
+194 : Linux サーバーは、定期的なメンテナンスのためにシングルユーザーモードで実行されています。 サーバーを通常のランレベルに復元するために使用するコマンドはどれですか？ (2 つ選択。） 
+A. telinit 0  
+B. shutdown -r now  
+C. sync  
+D. shutdown -h now  
+E. reboot  
+
+解答：B、E  
+ 
+195 : さまざまな TCP または UDP サービスとの対話をスクリプト化するために使用できるコマンドはどれですか？ 
+A. ftp  
+B. nc  
+C. tcpdump  
+D. strings  
+E. wget
+  
+解答：B  
+ 
+196 : PXE が提供する機能は何ですか？ 
+A. ネットワークインターフェイスを使用してコンピュータを起動する機能。
+B. コンピュータ上でリモート X11 デスクトップを起動する機能。 
+C. ブートプロセスの完了後にシステムの構成を検証する機能。 
+D. ブートプロセスを完了する前にシステムの構成を確認する機能。 
+
+解答：A  
+ 
+197 : システムが稼働している Linux サーバが、メンテナンスのために rescue.target にブートされました。 サーバーを通常のターゲットに復元するために使用するコマンドはどれですか？ (2 つ選択。） 
+A. telinit 0  
+B. systemctl default  
+C. sync  
+D. systemctl emergency  
+E. systemctl reboot  
+
+解答：A、B  
+ 
+198 : Linux システムで最も CPU サイクルを使用しているソートされたプロセスの PID を提供する次のコマンドはどれですか？ 
+A. top  
+B. uptime  
+C. ps aux  
+D. vmstat  
+E. freemem  
+
+解答：A  
+ 
+199 : 次のうち、CD-ROM ファイルシステム標準はどれですか？
+A. OSI9660  
+B. ISO9660  
+C. SR0FS  
+D. ISO8859  
+E. ROM-EO  
+
+解答：B  
+
